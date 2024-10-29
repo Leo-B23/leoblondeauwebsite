@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marque Jordan - Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #121212;
+            color: #fff; /* Changement de la couleur de la police en blanc */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .logo-container img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: inline;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #c8102e;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: #fff; /* Changement de la couleur du texte en blanc */
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #c8102e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.1);
+        }
+
+        .hero-images {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-images img {
+            width: 110%; /* Agrandissement des images */
+            height: auto; /* Conserve le ratio d'aspect */
+            max-width: none; /* Permet aux images d'être plus larges que leur conteneur */
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            z-index: 1; /* Mise en avant des images */
+        }
+
+        .hero-images img:nth-child(1) {
+            animation: fade 20s infinite 0s;
+        }
+        .hero-images img:nth-child(2) {
+            animation: fade 20s infinite 5s;
+        }
+        .hero-images img:nth-child(3) {
+            animation: fade 20s infinite 10s;
+        }
+        .hero-images img:nth-child(4) {
+            animation: fade 20s infinite 15s;
+        }
+
+        @keyframes fade {
+            0%, 20% {
+                opacity: 0;
+            }
+            25%, 95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .collection {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #1c1c1c;
+        }
+
+        .collection h2 {
+            margin-bottom: 30px;
+            color: #c8102e;
+        }
+
+        .items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://th.bing.com/th?id=OIP.AQGwcHtlaik1O53med5XAgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Logo Jordan" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#histoire">Histoire</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Explorez l'Excellence</h2>
+                <p>Découvrez notre collection de sneakers emblématiques.</p>
+                <a href="#collection" class="cta-button">Explorer</a>
+            </div>
+            <div class="hero-images">
+                <img src="https://th.bing.com/th/id/R.52e258a0b3328b6dc31d90043b845920?rik=fbBGW7RVPFGoKA&riu=http%3A%2F%2Fwallpapercave.com%2Fwp%2FWshl7HG.jpg&ehk=vL5H9b8pkjMlJ%2baP0IWSfRZbNrfipjpQx2eMuZ%2bvshA%3d&pid=ImgRaw" alt="Image 1">
+                <img src="https://th.bing.com/th/id/R.35048a5cf176847d036e34057c5d5127?rik=SVewZloHc%2brd3g&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1828089.jpg&ehk=yK9%2fs3E12XV%2fwMVJNssKIFlvocqgYcqLmCfql1Q4crs%3d&risl=&pid=ImgRaw&r=0" alt="Image 2">
+                <img src="https://th.bing.com/th/id/OIP.g68o8LX58NOPgiOMEk_YEAHaEo?w=271&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Image 3">
+                <img src="https://th.bing.com/th/id/OIP.UuJYoLMyi23DHZAEO4RZIAHaF7?w=212&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Image 4">
+            </div>
+        </section>
+
+        <section id="collection" class="collection">
+            <h2>Notre Collection</h2>
+            <div class="items">
+                <div class="item">
+                    <h3>Sneakers 1</h3>
+                    <p>Description courte du produit.</p>
+                </div>
+                <div class="item">
+                    <h3>Sneakers 2</h3>
+                    <p>Description courte du produit.</p>
+                </div>
+                <div class="item">
+                    <h3>Sneakers 3</h3>
+                    <p>Description courte du produit.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Marque Jordan. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
